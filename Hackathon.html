@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal portfolio website showcasing skill, background, and achievements.">
+    <meta name="author" content="Oliver Omondi">
+    <title>Portfolio.(H1)</title>
+    <link rel="stylesheet" href="Styles/Hackathon.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header__logo">
+            <video src="Embeding/Video Logo.mp4" autoplay loop muted class="logo_video"></video>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#interests">My Interests</a></li>
+                    <li><a href="#educational_background">Education Background</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button id="closebtn" class="bttn close" onclick="closemenu()">
+                        <img src="Images/close.jpg" alt="Close Icon" width="30" height="30">
+                    </button>
+                </ul>
+                <button id="menubtn" class="bttn menu" onclick="openmenu()">
+                    <img src="Images/menu.webp" alt="Menu Icon" width="30" height="30">
+                </button>
+            </nav>
+        </div>
+        <div class="header_text">
+            <h1>Hi, I'm <span>Omondi</span>, Welcome to my <span>portfolio</span></h1>
+            <p>Software Developer | Cybersecurity Enthusiast | Finance & Technology Advocate</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="about__container">
+            <h2 class="sub_title">About Me</h2>
+            <p>
+                I'm a fervent software developer currently refining my skills at Power Learn Academy. I've also expanded my expertise in cybersecurity through Cisco and complemented it with practical skills from TryHackMe, equipping myself to tackle real-world challenges. I participated in the Nairobi Bitcoin Developer Bootcamp, where I deepened my understanding of blockchain technology.<br>
+                My professional journey includes an Internship at Chuna DT Sacco, where I assisted in various tasks and gained hands-on experience in the financial sector. Additionally, I hold a course in Banking and Finance, blending tech with finance to drive innovative solutions. I'm committed to leveraging my diverse background to create impactful, secure, and efficient software.<br>
+            </p>
+        </div>
+    </section>
+
+    <div class="tab_titles">
+        <p class="tab_links active-link" onclick="opentab('interests')">My Interests</p>
+        <p class="tab_links" onclick="opentab('educational_background')">Educational Background</p>
+        <p class="tab_links" onclick="opentab('skills')">Skills</p>
+        <p class="tab_links" onclick="opentab('projects')">Projects</p>
+    </div>
+
+    <section>
+        <div class="tab_content active-tab" id="interests">
+            <h2>My Interests</h2>
+            <p>
+                <dl>
+                    <dt><span>Software Development:</span></dt>
+                    <dd>I am deeply fervent about creating scalable, efficient, and user-centric applications that deliver exceptional user experience while maintaining high performance.</dd>
+                    <br>
+                    <dt><span>Cybersecurity:</span></dt>
+                    <dd>I am deeply enthusiastic about cybersecurity, with a particular focus on securing decentralized systems and safeguarding sensitive data.</dd>
+                    <br>
+                    <dt><span>Finance & Technology:</span></dt>
+                    <dd>With a solid background in Banking and Finance, I am deeply interested in how technology (fintech) is revolutionizing financial services.</dd>
+                    <br>
+                    <dt><span>Continuous Learning:</span></dt>
+                    <dd>I firmly believe in the power of continuous self-improvement and thrive on embracing new challenges that push me to grow.</dd>
+                    <br>
+                    <dt><span>Mentorship & Collaboration:</span></dt>
+                    <dd>I deeply value collaboration and mentorship, recognizing that both learning from seasoned professionals and sharing knowledge with others are crucial for growth.</dd>
+                </dl>
+            </p>
+        </div>
+
+        <div class="tab_content" id="educational_background">
+            <h2>Educational Background</h2>
+            <p>
+                <strong><span>Diploma in Banking and Finance</span></strong><br>
+                <em>Kiambu Institute Of Science and Technology, (2018-2021)</em>
+            </p>
+            <br>
+            <p>
+                <strong><span>Junior Cybersecurity Analyst</span></strong><br>
+                <em>Cisco, (2023-2024)</em>
+            </p>
+            <br>
+            <p>
+                <strong><span>Software Development Course</span></strong><br>
+                <em>Power Learn Academy, (Ongoing)</em>
+            </p>
+            <br>
+            <p>
+                <strong><span>Bitcoin Lightning Development Bootcamp</span></strong><br>
+                <em>Africa Free Routing, (2024)</em>
+            </p>
+        </div>
+
+        <div class="tab_content" id="skills">
+            <h2>Skills</h2>
+            <p>
+                <dl>
+                    <dt><span>Cybersecurity</span></dt>
+                    <dd><strong>Network Security:</strong> firewalls, VPNs, IDS|IPS</dd>
+                    <dd><strong>Penetration Testing:</strong> Ethical Hacking, Vulnerability Testing</dd>
+                    <dd><strong>Security Tools:</strong> Wireshark, Nmap, Nessus, Metasploit, Splunk</dd>
+                    <br>
+                    <dt><span>Software Development</span></dt>
+                    <dd><strong>Frontend:</strong> HTML, CSS, Javascript</dd>
+                    <dd><strong>Backend:</strong> Python, SQL, Node.js, R</dd>
+                    <dd><strong>Tools & platforms:</strong> Git, GitHub, Docker, VS Code</dd>
+                    <br>
+                    <dt><span>Finance & Technology</span></dt>
+                    <dd><strong>Financial Reporting & Analysis:</strong> Power BI</dd>
+                    <dd><strong>Loan & Credit Analysis:</strong> Excel, R</dd>
+                    <br>
+                </dl>
+            </p>
+        </div>
+
+        <div class="tab_content" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <a href="https://github.com/Dearbeey/Week-3-Python-Assignment.git" target="_blank">
+                        <strong>Discount calculator</strong>
+                    </a>
+                    <p>This project is a discount calculator application built with python that asks the user to input the actual price and discount available to calculate the price after discount.</p>
+                </li>
+                <li>
+                    <a href="https://github.com/PLP-Database-Design/wk-3a-Dearbeey.git" target="_blank">
+                        <strong>Project 2</strong>
+                    </a>
+                    <p>This project is a database application that allows admin to manipulate data in a database</p>
+                </li>
+                <li>
+                    <a href="https://github.com/PLP-WebTechnologies/feb-2025-advanced-html-Dearbeey.git" target="_blank">
+                        <strong>Project 3</strong>
+                    </a>
+                    <p>This project is a web application that receives user messages after putting personal information such as name, email, and password.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact me</h2>
+        <p>Feel free to reach out using the form below if you'd like to discuss opportunities, collaborate, or just say hi.</p>
+        <br>
+        <div class="contact__container">
+            <div class="row">
+                <div class="contact_right">
+                    <form action="#" name="submit-to-google-sheet">
+                        <fieldset>
+                            <p><label for="yourName">Your Name:</label><br><input type="text" id="yourName" name="yourName" placeholder="Chris" autocomplete="on" autofocus required><br></p> 
+                            <p><label for="email">Email:</label><br><input type="email" id="email" name="email" placeholder="your email" required></p>
+                            <p><label for="message">Your Message:</label><br><textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here" required></textarea></p>
+                            <p><button type="submit" class="btn btn2">Send Message</button></p>
+                        </fieldset>  
+                    </form>
+                    <span id="msg"></span>
+                    <a href="My_CV/My CV.pdf" download class="btn btn2">Download CV</a>
+                    <br><br>
+                    <div class="contact_left">
+                        <div class="social_icons">
+                            <a href="https://www.linkedin.com/in/oliveromondi/" target="_blank"><img src="Images/linkedin.png" alt="LinkedIn" width="40" height="40"></a>
+                            <a href="https://github.com/Dearbeey" target="_blank"><img src="Images/github.png" alt="GitHub" width="40" height="40"></a>
+                            <a href="https://wa.me/+254746520413" target="_blank"><img src="Images/whatsapp.jpeg" alt="WhatsApp" width="40" height="40"></a>
+                        </div>
+                        <br>
+                        <p><a href="tel:+254746075115"><img src="Images/phone.jpeg" alt="Call Me" width="40" height="40"/></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright"> >>> &copy;2025 Oliver Omondi. All rights reserved. <<< </p>
+        <p><a href="#">Back to Top</a></p>
+    </footer>
+
+    <script src="Styles/Hackathone.js"></script>
+</body>
+
+</html>
